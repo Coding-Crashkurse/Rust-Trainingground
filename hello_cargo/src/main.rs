@@ -1,12 +1,45 @@
-// use std::io;
-
 fn main() {
+    // addition
+    let sum = 5 + 10;
 
-    let x = 4;
-    let y = 5;
-    let mut z = x * y;
+    // subtraction
+    let difference = 95.5 - 4.3;
 
-    z = 10;
+    // multiplication
+    let product = 4 * 30;
 
-    println!("X: {x} * Y:{y} = {z}");
+    // division
+    let quotient = 56.7 / 32.2;
+    let truncated = -5 / 3; // Results in -1
+
+    // remainder
+    let remainder = 43 % 5;
+
+    let f = false;
+    let mut x = 4;
+
+    // let z = x / f; // does not work
+    // println!({z})
+
+    let number = 3;
+    if number > 5 {
+        println!("larger");
+    } else {
+        println!("not larger");
+    }
+
+    another_function(5);
+    another_function(5);
+    another_function(5);
+    let abc = five(6);
+    println!("{abc}");
+
+}
+
+fn another_function(x: i32) {
+    println!("The value of x is: {x}");
+}
+
+fn five(x: i32) -> i32 {
+    return x;
 }
