@@ -43,3 +43,19 @@ fn another_function(x: i32) {
 fn five(x: i32) -> i32 {
     return x;
 }
+
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
+
+fn test {
+    let user = User {
+        active: true,
+        username: String::from("someuser"),
+        email: String::from("someemail"),
+        sign_in_count: 1
+    }
+}
